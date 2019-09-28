@@ -168,6 +168,24 @@ input[type="search"] {
   align-items: center;
 }
 
+/* List page CSS */
+
+.grid {
+  display: grid;
+  grid-gap: 3px;
+  grid-auto-rows: minmax(15px, auto);
+  /* grid-template-rows: 15px; */
+}
+
+.grid div {
+  padding: 5px;
+  background-color: #f7b538;
+}
+
+#grid-top {
+
+}
+
 @media screen and (min-width: 768px) {
 
   h1 {
@@ -205,5 +223,11 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     min-width: 100px;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-rows:
   }
 }
