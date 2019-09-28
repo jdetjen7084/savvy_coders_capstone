@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Seasonal Beer Search</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.5.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <span class="nav-toggle fas fa-bars">
+      <!-- <i class="fas fa-bars"></i> -->
+  </span>
+  <nav class="nav">
+    <ul class="main is-hidden--mobile">
+      <li class="link"><a href="../">Home</a></li>
+      <li class="link"><a href="../list/">List</a></li>
+      <li class="link"> <a href="./">Contact</a></li>
+    </ul>
+  </nav>
+  <figure class="hero">
+    <img id="image"
+          src="../docs/IMG/beer_header.jpg"
+          alt="beer" width="75%" height="75%">
+    <h1>Seasonal Beer Search</h1>
+  </figure>
+  <main>
+    <form action="#" method="POST" data-netlify="true">
+      <div class="flex-container--desktop flex-row--desktop">
+      <div>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name">
+        </div>
+      <div>
+        <label for="msg">Enter your message:</label>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <footer class="foot">
+    <h2>Always be sure to drink responsibly!</h2>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
