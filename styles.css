@@ -23,7 +23,7 @@ body {
 
 .main {
   list-style-type: none;
-  display: none;
+  /* display: none; */
 }
 
 .link a {
@@ -33,7 +33,7 @@ body {
   margin: 20px;
   padding: 15px;
   align-items: center;
-  filter: drop-shadow(6px 5px 4px var(--secondary));
+  filter: drop-shadow(6px 5px 4px var(--primary-variant));
 }
 
 .main li {
