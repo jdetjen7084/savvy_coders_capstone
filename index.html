@@ -17,7 +17,7 @@
   <nav class="nav">
     <ul class="main is-hidden--mobile">
       <li class="link"><a href="./index.html">Home</a></li>
-      <li class="link"><a href="./list.html">List</a></li>
+      <li class="link"><a href="./list/">List</a></li>
       <li class="link"> <a href="./contact/">Contact</a></li>
     </ul>
   </nav>
@@ -28,8 +28,8 @@
     <h1>Seasonal Beer Search</h1>
   </figure>
   <main>
-    <div>
-      <label for="select-brewery">Choose Brewery:</label>
+    <div class="selection">
+      <label for="select-brewery">Brewery:</label>
         <select>
           <option value="">--Choose a Brewery--</option>
           <option value="Schlafly">Schlafly</option>
@@ -49,8 +49,8 @@
           <option value="Perennial">Perennial</option>
         </select>
     </div>
-    <div>
-      <label for="select-style">Choose Style:</label>
+    <div class="selection">
+      <label for="select-style">Style:</label>
         <select>
           <option value="">--Choose a Beer Style--</option>
           <option value="Pumpkin">Pumpkin</option>
@@ -62,6 +62,9 @@
           <option value="Irish Stout">Irish Stout</option>
           <option value="Coffee Stout">Coffee Stout</option>
         </select>
+    </div>
+    <div class="search">
+      <input type="search" value="Search">
     </div>
   </main>
   <footer class="foot">

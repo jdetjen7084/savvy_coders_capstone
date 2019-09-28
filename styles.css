@@ -73,10 +73,11 @@ h1 {
   border-radius: 100px 0 100px 0;
   text-align: center;
   filter: drop-shadow(0 0 0.75rem #086788);
+  display: flex;
+  justify-content: center;
 }
 
 h1,
-img,
 footer h2 {
   display: flex;
   justify-content: space-around;
@@ -98,7 +99,20 @@ footer h2 {
   }
 } */
 
-/* footer */
+/* Main */
+
+.selection {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* Footer */
 
 footer {
   border-top: 2px solid var(--secondary);
@@ -137,7 +151,8 @@ form div {
   margin: 8px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="search"] {
   background: var(--secondary);
   border-radius: 8px;
   display: inline-block;
@@ -146,6 +161,11 @@ input[type="submit"] {
   max-width: 96px;
   text-align: center;
   color: var(--primary-variant);
+}
+
+input[type="search"] {
+  margin-left: 1.5em;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -179,5 +199,11 @@ input[type="submit"] {
 
   .nav-toggle {
     display: none;
+  }
+
+  .selection {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
   }
 }
