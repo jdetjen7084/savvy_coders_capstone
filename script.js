@@ -36,14 +36,9 @@ function over21(Question, Choose, Yes, No, Enter) {
        </div>`
 }
 
-// when home page opens, display below code
-//window.onload maybe?
-
 //flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
 
 window.onload = function() {
   flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
 }
-
-
 

@@ -12,6 +12,12 @@ body {
 
 /* Nav stuff */
 
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
 .nav {
   font-size: 18px;
   font-weight: bold;
@@ -22,8 +28,8 @@ body {
 }
 
 .main {
-  list-style-type: none;
-  display: none;
+  /* list-style-type: none; */
+  /* display: none; */
 }
 
 .link a {
