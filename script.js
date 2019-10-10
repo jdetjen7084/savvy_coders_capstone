@@ -19,12 +19,10 @@ const blank = document.querySelector("#blank");
 const yes = document.querySelector("#yes");
 const no = document.querySelector("#no");
 const enter = document.querySelector("#enter");
-const cardIMG = document.querySelector(".card-img");
 
 // setTimeout(() => open(over21), 2000);
-open(over21);
 
-function over21(Question, Choose, Yes, No, Enter, photo) {
+function over21(Question, Choose, Yes, No, Enter) {
   return `<div class="age-verif-card">
        <label for="age-verif" class="label">${Question}</label>
       <select name="verif" id="age-select">
@@ -32,16 +30,20 @@ function over21(Question, Choose, Yes, No, Enter, photo) {
         <option id="yes" value="yes">${Yes}</option>
         <option id="no" value="no">${No}</option>
        </select>
-       <figure>
-         <img src=${photo} alt="" class="card-img">
-       </figure>
-        <div>
+    <div>
       <a href="#" id="enter">${Enter}</a>
     </div>
        </div>`
 }
 
-flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter", "https://images.app.goo.gl/33FQNjM7FVXpPxzg9");
+// when home page opens, display below code
+//window.onload maybe?
+
+//flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
+
+window.onload = function() {
+  flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
+}
 
 
 
