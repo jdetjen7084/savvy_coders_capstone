@@ -18,7 +18,7 @@ const ageSelect = document.querySelector("#age-select");
 const blank = document.querySelector("#blank");
 const yes = document.querySelector("#yes");
 const no = document.querySelector("#no");
-const enter = document.querySelector("#enter");
+const enter = document.getElementById("enter");
 
 // setTimeout(() => open(over21), 2000);
 
@@ -36,11 +36,11 @@ function over21(Question, Choose, Yes, No, Enter) {
        </div>`
 }
 
-//flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
+window.onload = () => flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
 
-window.onload = function() {
-  flexDiv.innerHTML += over21("Are you over 21?", "--Choose--", "Yes", "No", "Enter");
-}
+//Age Denied card below
+const ageDenied = document.querySelector("#card-age-denied");
+const sorry = document.querySelector("#sorry");
 
 //Enter button functionality below
 enter.addEventListener("click", function() {
@@ -50,17 +50,15 @@ enter.addEventListener("click", function() {
     return document.prompt("Have a lot of fun!")
   }
 });
-enter();
-
-//Age Denied card below
-const ageDenied = document.querySelector("#card-age-denied");
-const sorry = document.querySelector("#sorry");
-
+//checkAge(age){
+  //return (age > 21 ? "good to go | NO YOURE UNDER 21 YOU TODDLER)"
+}
 function tooYoung(sorry) {
   return `<div class="age-card">
     <h3 id="sorry">${sorry}</h3>
   </div>`
 }
+
 
 // ageDenied.innerHTML += tooYoung("Sorry, you are too young for this page.")
 
