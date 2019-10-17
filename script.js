@@ -44,15 +44,15 @@ window.onload = function() {
 
 //Enter button functionality below
 enter.addEventListener("click", function() {
-  if (document.getElementById("age-select") === no) {
+  if (document.getElementById("#age-select") === no) {
     return ageDenied.innerHTML += tooYoung("Sorry, you are too young for this page.")
   } else {
     return document.prompt("Have a lot of fun!")
   }
-})
+});
+enter();
 
 //Age Denied card below
-
 const ageDenied = document.querySelector("#card-age-denied");
 const sorry = document.querySelector("#sorry");
 

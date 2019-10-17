@@ -242,6 +242,9 @@ input[type="search"] {
   .grid {
     display: grid;
     grid-gap: 3px;
-    /* grid-template-rows: */
+  }
+
+  #image {
+    max-width: 40vw;
   }
 }
