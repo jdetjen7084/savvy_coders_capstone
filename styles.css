@@ -116,7 +116,7 @@ footer h2 {
 }
 
 /* Age Verif Card Section */
-.age-card {
+.age-verif-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +131,7 @@ footer h2 {
   z-index: 2;
 }
 
-#flex-div,
+#over21card,
 #card-age-denied {
   display: flex;
   justify-content: space-around;
