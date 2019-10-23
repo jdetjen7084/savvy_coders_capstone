@@ -3,7 +3,6 @@ import * as state from "./store";
 
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
-    ${Header(st)}
     ${Nav()}
     ${Main(st)}
     ${Footer()}
