@@ -51,9 +51,7 @@ export default {
       <input type="search" value="Search">
     </div>
   </main>
-  <footer class="foot">
-    <h2>Always be sure to drink responsibly!</h2>
-  </footer>
+
   <script src="./script.js"></script>
   `
 }
