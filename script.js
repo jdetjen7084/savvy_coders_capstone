@@ -31,7 +31,7 @@ function over21(Question, Choose, Yes, No, Enter) {
         <option id="no" value="no">${No}</option>
        </select>
     <div>
-      <a href="#" id="enter">${Enter}</a>
+      <button id="enter" type="button>${Enter}</button>
     </div>
        </div>`
 }
@@ -44,15 +44,17 @@ const sorry = document.querySelector("#sorry");
 
 //Enter button functionality below
 enter.addEventListener("click", function() {
-  if (document.getElementById("#age-select") === no) {
+  if (document.getElementById("age-select") === no) {
     return ageDenied.innerHTML += tooYoung("Sorry, you are too young for this page.")
   } else {
     return document.prompt("Have a lot of fun!")
   }
 });
+
+
 //checkAge(age){
   //return (age > 21 ? "good to go | NO YOURE UNDER 21 YOU TODDLER)"
-}
+//}
 function tooYoung(sorry) {
   return `<div class="age-card">
     <h3 id="sorry">${sorry}</h3>
