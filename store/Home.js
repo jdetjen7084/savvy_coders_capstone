@@ -52,6 +52,6 @@ export default {
     </div>
   </main>
 
-  <script src="./script.js"></script>
+
   `
 }
