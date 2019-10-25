@@ -1,15 +1,5 @@
 export default {
   main: `
-  <nav class="nav">
-      <span class="nav-toggle fas fa-bars">
-          <!-- <i class="fas fa-bars"></i> -->
-      </span>
-    <ul class="main is-hidden--mobile">
-      <li class="link"><a href="./index.html">Home</a></li>
-      <li class="link"><a href="./list/">List</a></li>
-      <li class="link"> <a href="./contact/">Contact</a></li>
-    </ul>
-  </nav>
   <div id="over21card">
   </div>
   <div id="card-age-denied">
