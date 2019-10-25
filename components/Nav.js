@@ -5,7 +5,7 @@ function linksBuilder(links) {
 }
 
 export default () =>
-  `<nav>
+  `<nav class="nav">
       <span class="fas fa-bars is-hidden--desktop"></span>
       <ul class="is-hidden--mobile is-hidden--tablet is-shown--desktop">
       ${linksBuilder(Links)}
