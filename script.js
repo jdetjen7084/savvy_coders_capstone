@@ -1,13 +1,13 @@
 // Hamburger Functionality below
 
-const hamburger = document.querySelector("nav span");
-const hiddenUL = document.querySelector("ul");
+// const hamburger = document.querySelector("nav span");
+// const hiddenUL = document.querySelector("ul");
 
-console.log(hamburger)
+// console.log(hamburger)
 
-hamburger.addEventListener("click", () => {
-hiddenUL.classList.toggle(".main");
-});
+// hamburger.addEventListener("click", () => {
+// hiddenUL.classList.toggle(".main");
+// });
 
 // // Age Verif Card Info below
 // //const made if necessary for later

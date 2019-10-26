@@ -13,7 +13,7 @@ export default {
   <main>
     <div class="selection">
       <label for="select-brewery">Brewery:</label>
-        <select>
+        <select id="brewery-list>
           <option value="">--Choose a Brewery--</option>
           <option value="Schlafly">Schlafly</option>
           <option value="Urban Chestnut">Urban Chestnut</option>
@@ -26,7 +26,7 @@ export default {
     </div>
     <div class="selection">
       <label for="select-style">Style:</label>
-        <select>
+        <select id="beer-list>
           <option value="">--Choose a Beer Style--</option>
           <option value="Pumpkin">Pumpkin</option>
           <option value="Imperial Pumpkin">Imperial Pumpkin</option>
@@ -38,7 +38,7 @@ export default {
         </select>
     </div>
     <div class="search">
-      <input type="search" value="Search">
+      <input id="search" type="button" value="Search">
     </div>
   </main>
 
