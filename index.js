@@ -1,4 +1,4 @@
-import { Nav, Main, Footer } from "./components";
+import { Nav, Main, Footer, BeerDrop, BrewDrop } from "./components";
 import * as state from "./store";
 
 import Navigo from "navigo";
@@ -10,6 +10,8 @@ function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
     ${Nav()}
     ${Main(st)}
+    ${BeerDrop()}
+    ${BrewDrop()}
     ${Footer()}
   `;
   router.updatePageLinks();
@@ -26,9 +28,7 @@ router
   .resolve();
 
 
-
-
-//Search button
+  //Search button
 const button = document.getElementById("search");
 
 button.addEventListener("click", function(){
