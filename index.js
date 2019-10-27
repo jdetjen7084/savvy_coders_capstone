@@ -1,4 +1,4 @@
-import { Nav, Main, Footer, BeerDrop, BrewDrop } from "./components";
+import { Nav, Main, Footer } from "./components";
 import * as state from "./store";
 
 import Navigo from "navigo";
@@ -6,12 +6,11 @@ import { capitalize } from "lodash";
 
 const router = new Navigo(location.origin);
 
-function render(st = state.Home) {
+function render(st = state) {
   document.querySelector("#root").innerHTML = `
     ${Nav()}
     ${Main(st)}
-    ${BeerDrop()}
-    ${BrewDrop()}
+
     ${Footer()}
   `;
   router.updatePageLinks();
