@@ -1,3 +1,5 @@
+//import imgBeerHeader from '../docs/IMG/beer_header.jpg';
+
 function generateBeerList(beers) {
   return beers.map(beer => `<li>${beer}</li>`).join(" ");
 }
@@ -10,19 +12,23 @@ export default st => `
 <div class="selection">
 <label for="select-brewery">Brewery:</label>
   <select id="brewery-list>
-    <option>${generateBrewList(st.breweries)}</option>
+  <option value="">--Choose a Brewery--</option>
+    ${generateBrewList(st.breweries)}
   </select>
 </div>
 <div class="selection">
   <label for="select-style">Style:</label>
   <select id="beer-list>
-    <option>${generateBeerList(st.beers)}</option>
+  <option value="">--Choose a Beer Style--</option>
+    ${generateBeerList(st.beers)}
   </select>
 </div>
 <div class="search">
   <input id="search" type="button" value="Search">
 </div>
-`;
+`
+;
+
 
 //   <ul>
 //   ${generateBeerList(st.beers)}
@@ -30,4 +36,5 @@ export default st => `
 //   <ul>
 //   ${generateBrewList(st.breweries)}
 //  </ul>
+
 
