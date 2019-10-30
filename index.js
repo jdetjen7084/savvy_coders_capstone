@@ -6,32 +6,33 @@ import { capitalize } from "lodash";
 
 const router = new Navigo(location.origin);
 
-function render(st = state) {
-  document.querySelector("#root").innerHTML = `
+function render(st = state.Home) {
+    document.querySelector("#root").innerHTML = `
     ${Nav()}
     ${Main(st)}
-
     ${Footer()}
   `;
   router.updatePageLinks();
 }
 
+//render()
+
 router
-  .on(":page", params =>
-  render(
+  .on(":page", params => {
+    render(
     state[
     capitalize(params.page)]
   )
-  )
+    })
   .on("/", () => render())
   .resolve();
 
-
   //Search button
-const button = document.getElementById("search");
+  const button = document.getElementById("search");
 
-button.addEventListener("click", function(){
-  console.log("This button is clicked!")
-})
+  button.addEventListener("click", function(){
+    console.log("This button is clicked!")
+  })
+
 
 
