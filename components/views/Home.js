@@ -1,24 +1,25 @@
-//import imgBeerHeader from '../docs/IMG/beer_header.jpg';
+import imgBeerHeader from '../docs/IMG/beer_header.jpg';
 
 function generateBeerList(beers) {
-  return beers.map(beer => `<li>${beer}</li>`).join(" ");
+  return beers.map(beer => `<option>${beer}</option>`).join(" ");
 }
 
 function generateBrewList(breweries) {
-  return breweries.map(brewery => `<li>${brewery}</li>`).join(" ");
+  return breweries.map(brewery => `<option>${brewery}</option>`).join(" ");
 }
 
 export default st => `
+<img src="${imgBeerHeader}>
 <div class="selection">
 <label for="select-brewery">Brewery:</label>
-  <select id="brewery-list>
+  <select id="brewery-list">
   <option value="">--Choose a Brewery--</option>
     ${generateBrewList(st.breweries)}
   </select>
 </div>
 <div class="selection">
   <label for="select-style">Style:</label>
-  <select id="beer-list>
+  <select id="beer-list">
   <option value="">--Choose a Beer Style--</option>
     ${generateBeerList(st.beers)}
   </select>
@@ -28,13 +29,3 @@ export default st => `
 </div>
 `
 ;
-
-
-//   <ul>
-//   ${generateBeerList(st.beers)}
-//   </ul>
-//   <ul>
-//   ${generateBrewList(st.breweries)}
-//  </ul>
-
-
