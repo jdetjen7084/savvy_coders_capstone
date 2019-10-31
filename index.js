@@ -1,6 +1,7 @@
 import { Nav, Main, Footer } from "./components";
 import * as state from "./store";
 
+import axios from "axios";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 
@@ -27,12 +28,13 @@ router
   .on("/", () => render())
   .resolve();
 
-  //Search button
-  const button = document.getElementById("search");
+// axios
+// .get()
+// .then(response => {
 
-  button.addEventListener("click", function(){
-    console.log("This button is clicked!")
-  })
+// })
+// .catch(err => console.log(err))
+
 
 
 
