@@ -1,7 +1,7 @@
 import { Nav, Main, Footer } from "./components";
 import * as state from "./store";
 
-import axios from "axios";
+//import axios from "axios";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 
