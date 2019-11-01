@@ -28,12 +28,14 @@ router
   .on("/", () => render())
   .resolve();
 
-// axios
-// .get()
-// .then(response => {
+//Search button
+const button = document.getElementById("search");
 
-// })
-// .catch(err => console.log(err))
+button.addEventListener("click", () =>
+
+
+  console.log("This button is clicked!")
+)
 
 
 

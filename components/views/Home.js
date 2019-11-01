@@ -1,4 +1,4 @@
-import imgBeerHeader from '../docs/IMG/beer_header.jpg';
+//import imgBeerHeader from '../docs/IMG/beer_header.jpg';
 
 function generateBeerList(beers) {
   return beers.map(beer => `<option>${beer}</option>`).join(" ");
@@ -9,7 +9,7 @@ function generateBrewList(breweries) {
 }
 
 export default st => `
-<img src="${imgBeerHeader}>
+
 <div class="selection">
 <label for="select-brewery">Brewery:</label>
   <select id="brewery-list">
@@ -29,3 +29,4 @@ export default st => `
 </div>
 `
 ;
+//<img src="${imgBeerHeader}>
