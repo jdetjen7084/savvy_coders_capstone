@@ -1,9 +1,10 @@
-
 {
-"beer1": {
-  "brewery": "Schlafly",
-  "Pumpkin": "Pumpkin Ale",
-  "Availability": true
+"beer": {
+
+  "beer1": {
+    "brewery": "Schlafly",
+    "Pumpkin": "Pumpkin Ale",
+    "Availability": true
   },
   "beer2": {
     "brewery": "Schlafly",
@@ -200,3 +201,5 @@
     "Winter Lager": "Smoked Porter",
     "Availability": false }
   }
+
+}

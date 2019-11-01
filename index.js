@@ -1,5 +1,8 @@
 import { Nav, Main, Footer } from "./components";
 import * as state from "./store";
+import beers from "/BeerData";
+
+console.log(beers())
 
 //import axios from "axios";
 import Navigo from "navigo";

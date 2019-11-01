@@ -1,5 +1,5 @@
-import "@firebase/firestore";
+import "@firebase/database";
 
 import firebase from "./firebase-init";
 
-export default firebase.firestore();
+export default firebase.database();
