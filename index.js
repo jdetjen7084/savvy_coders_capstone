@@ -24,7 +24,19 @@ router
     capitalize(params.page)]
       )
     })
-  .on("/", () => render())
+  .on("/", () => {
+    render();
+
+  document.querySelector("#brewery-list").addEventListener('change', (e) => {
+    console.log(e.target.value);
+    //e for event
+  document.querySelector("#beer-list").addEventListener('change', (e) => {
+      console.log(e.target.value)
+    })
+  })
+
+
+  })
   .resolve();
 
 //Search button
@@ -46,6 +58,8 @@ const query = db.ref("beer").orderByKey();
       state.BeerData.push(childData);
     });
   })
+
+
 
 
 
