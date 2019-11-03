@@ -1,8 +1,4 @@
 
-// import { BeersDropdown } from '../components';
-// import BeersDropdown from '../components/BeersDropdown';
-//import imgBeerHeader from '../docs/IMG/beer_header.jpg';
-
 export default {
   view: "Home",
   beers: [
