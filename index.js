@@ -1,10 +1,8 @@
 import { Nav, Main, Footer } from "./components";
 import * as state from "./store";
-import beers from "/BeerData";
+import { db } from "./firebase";
 
-console.log(beers())
 
-//import axios from "axios";
 import Navigo from "navigo";
 import { capitalize } from "lodash";
 
@@ -19,14 +17,12 @@ function render(st = state.Home) {
   router.updatePageLinks();
 }
 
-//render()
-
 router
   .on(":page", params => {
     render(
     state[
     capitalize(params.page)]
-  )
+      )
     })
   .on("/", () => render())
   .resolve();
@@ -36,10 +32,20 @@ const button = document.getElementById("search");
 
 button.addEventListener("click", () =>
 
-
   console.log("This button is clicked!")
 )
 
+console.log(state);
+
+
+const query = db.ref("beer").orderByKey();
+
+  query.once("value").then(snapShot => {
+    snapShot.forEach(childSnapshot => {
+      const childData = childSnapshot.val();
+      state.BeerData.push(childData);
+    });
+  })
 
 
 

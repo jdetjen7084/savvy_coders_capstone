@@ -31,4 +31,4 @@ export default st => `
 `
 ;
 
-// {/* <img id="image" src="${imgBeerHeader}"></img> */}
+//<img id="image" src="${imgBeerHeader}"></img>

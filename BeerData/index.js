@@ -4,7 +4,7 @@ export default () => {
   let firebaseData = [];
   let breweries = [];
   const query = db.ref("beer").orderByKey();
-  //console.log(query);
+
   query.once("value").then(snapShot =>
     {
       snapShot.forEach(childSnapshot => {
@@ -15,10 +15,9 @@ export default () => {
       })
     }
     )
-    console.log(breweries)
     breweries = firebaseData.filter(beer => {
       beer.brewery === "Schlafly";
-    }).map(beer => beer)
-    console.log(breweries)
-    console.log(firebaseData)
+    }).map(beer => beer);
 }
+
+
