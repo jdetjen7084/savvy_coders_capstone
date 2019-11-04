@@ -17,5 +17,6 @@ export default {
     '2nd Shift',
     'Civil Life',
     'Square One'
-  ]
+  ],
+  beersToDisplay: []
 }

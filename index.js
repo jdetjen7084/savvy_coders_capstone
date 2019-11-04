@@ -15,6 +15,29 @@ function render(st = state.Home) {
     ${Footer()}
   `;
   router.updatePageLinks();
+
+  const currentPage = router.lastRouteResolved().url;
+
+  if (currentPage === "" || currentPage === "/Home") {
+    //"This code only runs on the homepage"
+
+    document.querySelector("#brewery-list").addEventListener('change', (e) => {
+      const beers = state.BeerData;
+      const targetBrewery = e.target.value;
+
+      const breweryResult = beers.filter(beer => beer.brewery === targetBrewery);
+      //console.log(breweryResult)
+
+      state.Home.beersToDisplay = breweryResult
+      render(state.Home)
+    })
+
+    document.querySelector("#beer-list").addEventListener('change', (e) => {
+        //console.log(e.target.value)
+
+    })
+  }
+
 }
 
 router
@@ -26,16 +49,6 @@ router
     })
   .on("/", () => {
     render();
-
-  document.querySelector("#brewery-list").addEventListener('change', (e) => {
-    console.log(e.target.value);
-    //e for event
-  document.querySelector("#beer-list").addEventListener('change', (e) => {
-      console.log(e.target.value)
-    })
-  })
-
-
   })
   .resolve();
 
@@ -47,7 +60,7 @@ button.addEventListener("click", () =>
   console.log("This button is clicked!")
 )
 
-console.log(state);
+//console.log(state);
 
 
 const query = db.ref("beer").orderByKey();
@@ -59,7 +72,7 @@ const query = db.ref("beer").orderByKey();
     });
   })
 
-
+console.log(state.BeerData)
 
 
 
