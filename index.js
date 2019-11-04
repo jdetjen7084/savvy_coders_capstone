@@ -59,25 +59,20 @@ router
       // state.Home.beersToDisplay = breweryResult
       // render(state.Home)
 
-      document.querySelector("#brewery-list").addEventListener('change', (event) => {
-        console.log(event.target.value);
-        const breweryList = state.BeerData;
-        //const demoBeers = state.BeerData.filter(d => e.target.value in d);
-        const target = breweryList.filter(brewery => event.target.value in brewery);
-        //console.log(demoBeers);
-        //console.log(target)
+    document.querySelector("#brewery-list").addEventListener('change', (event) => {
+      console.log(event.target.value);
+      const breweryList = state.BeerData;
+      const target = breweryList.filter(brewery => event.target.value in brewery);
+      //console.log(target)
       })
 
 
 
     document.querySelector("#beer-list").addEventListener('change', (event) => {
-        //console.log(event.target.value);
-        const beerList = state.BeerData;
-        const beerTarget = beerList.filter(beer => event.target.value in beer);
-        console.log(beerTarget)
-
+      const beerList = state.BeerData;
+      const beerTarget = beerList.filter(beer => event.target.value in beer);
+      console.log(beerTarget)
     })
-
   }
 )
   .resolve();
@@ -90,9 +85,9 @@ button.addEventListener("click", () =>
   console.log("This button is clicked!")
 )
 
-//console.log(state);
 
 
+//database query
 const query = db.ref("beer").orderByKey();
 
   query.once("value").then(snapShot => {

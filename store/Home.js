@@ -3,7 +3,7 @@ export default {
   view: "Home",
   beers: [
     'Pumpkin',
-    'Märzen',
+    'Marzen',
     'Winter Lager',
     'Summer Ale',
     'Irish Stout',
