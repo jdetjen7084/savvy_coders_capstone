@@ -1,0 +1,205 @@
+{
+"beer": {
+
+  "beer1": {
+    "brewery": "Schlafly",
+    "Pumpkin": "Pumpkin Ale",
+    "Availability": true
+  },
+  "beer2": {
+    "brewery": "Schlafly",
+    "Marzen": "Oktoberfest",
+    "Availability": true
+  },
+  "beer3": {
+    "brewery": "Schlafly",
+    "Summer Ale": "Summer Lager",
+    "Availability": false
+  },
+  "beer4": {
+    "brewery": "Schlafly",
+    "Winter Lager": "ESB",
+    "Availability": false
+  },
+  "beer5": {
+    "brewery": "Schlafly",
+    "Winter Lager": "Christmas Ale",
+    "Availability": false
+  },
+  "beer6": {
+    "brewery": "Schlafly",
+    "Winter Lager": "Merry Berry Ale",
+    "Availability": false
+  },
+  "beer7": {
+    "brewery": "Schlafly",
+    "Irish Stout": "Irish-Style Extra Stout",
+    "Availability": false
+  },
+  "beer8": {
+    "brewery": "Schlafly",
+    "Coffee Stout": "Coffee Stout",
+    "Availability": true
+  },
+  "beer9": {
+    "brewery": "Urban Chestnut",
+    "Pumpkin": "Count Orlok Black Pumpkin Ale",
+    "Availability": true
+  },
+  "beer10": {
+    "brewery": "Urban Chestnut",
+    "Marzen": "Oachkatzlschwoaf",
+    "Availability": true
+  },
+  "beer11": {
+    "brewery": "Urban Chestnut",
+    "Summer Ale": "Solaris",
+    "Availability": false
+  },
+  "beer12": {
+    "brewery": "Urban Chestnut",
+    "Summer Ale": "Big Shark Lemon Radler",
+    "Availability": false }
+    ,
+  "beer13": {
+    "brewery": "Urban Chestnut",
+    "Summer Ale": "Big Shark Grapefruit Radler",
+    "Availability": false
+  },
+  "beer14": {
+    "brewery": "Urban Chestnut",
+    "Winter Lager": "Horchata Kinsale",
+    "Availability": false
+  },
+  "beer15": {
+    "brewery": "Urban Chestnut",
+    "Winter Lager": "Cherry Thrale's",
+    "Availability": false
+  },
+  "beer16": {
+    "brewery": "Urban Chestnut",
+    "Irish Stout": "O'Florian's",
+    "Availability": false
+  },
+  "beer17": {
+    "brewery": "Urban Chestnut",
+    "Coffee Stout": "Kinsale",
+    "Availability": true
+  },
+  "beer18": {
+    "brewery": "4 Hands",
+    "Pumpkin": "Ill Repute",
+    "Availability": true
+  },
+  "beer19": {
+    "brewery": "4 Hands",
+    "Summer Ale": "Dakine",
+    "Availability": false
+  },
+  "beer20": {
+    "brewery": "4 Hands",
+    "Summer Ale": "On Cue",
+    "Availability": false
+  },
+  "beer21": {
+    "brewery": "4 Hands",
+    "Summer Ale": "Contact High Juiced",
+    "Availability": false
+  },
+  "beer22": {
+    "brewery": "4 Hands",
+    "Coffee Stout": "Devil's Invention",
+    "Availability": true
+  },
+  "beer23": {
+    "brewery": "4 Hands",
+    "Winter Lager": "Chocolate Milk Stout",
+    "Availability": true
+  },
+  "beer24": {
+    "brewery": "Civil Life",
+    "Marzen": "Oktoberfest",
+    "Availability": true
+  },
+  "beer25": {
+    "brewery": "Civil Life",
+    "Summer Ale": "Vienna Lager",
+    "Availability": false
+  },
+  "beer26": {
+    "brewery": "Civil Life",
+    "Irish Stout": "Extra Stout",
+    "Availability": false
+  },
+  "beer27": {
+    "brewery": "Modern",
+    "Winter Lager": "Arkham's Finest",
+    "Availability": true
+  },
+  "beer28": {
+    "brewery": "Modern",
+    "Winter Lager": "The Heeler",
+    "Availability": true
+  },
+  "beer29": {
+    "brewery": "Modern",
+    "Irish Stout": "Clandestine",
+    "Availability": false
+  },
+  "beer30": {
+    "brewery": "Modern",
+    "Marzen": "Oktoberfest",
+    "Availability": true
+  },
+  "beer31": {
+    "brewery": "2nd Shift",
+    "Marzen": "Oktoberfest",
+    "Availability": true
+  },
+  "beer32": {
+    "brewery": "2nd Shift",
+    "Summer Ale": "Kolsch",
+    "Availability": false
+  },
+  "beer33": {
+    "brewery": "2nd Shift",
+    "Summer Ale": "Arancia E Ibisco",
+    "Availability": false
+  },
+  "beer34": {
+    "brewery": "2nd Shift",
+    "Winter Lager": "Cat Spit Stout",
+    "Availability": true
+  },
+  "beer35": {
+    "brewery": "2nd Shift",
+    "Winter Lager": "Liquid Spiritual Delight",
+    "Availability": true
+  },
+  "beer36": {
+    "brewery": "Square One",
+    "Pumpkin": "Spiced Pumpkin Ale",
+    "Availability": true
+  },
+  "beer37": {
+    "brewery": "Square One",
+    "Irish Stout": "Irish Stout",
+    "Availability": false
+  },
+  "beer38": {
+    "brewery": "Square One",
+    "Marzen": "Oktoberfest",
+    "Availability": true
+  },
+  "beer39": {
+    "brewery": "Square One",
+    "Summer Ale": "Summer Saison",
+    "Availability": false
+  },
+  "beer40": {
+    "brewery": "Square One",
+    "Winter Lager": "Smoked Porter",
+    "Availability": false }
+  }
+
+}
