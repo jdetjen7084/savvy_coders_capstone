@@ -16,27 +16,27 @@ function render(st = state.Home) {
   `;
   router.updatePageLinks();
 
-  const currentPage = router.lastRouteResolved().url;
+  // const currentPage = router.lastRouteResolved().url;
 
-  if (currentPage === "" || currentPage === "/Home") {
-    //"This code only runs on the homepage"
+  // if (currentPage === "" || currentPage === "/Home") {
+  //   //"This code only runs on the homepage"
 
-    document.querySelector("#brewery-list").addEventListener('change', (e) => {
-      const beers = state.BeerData;
-      const targetBrewery = e.target.value;
+  //   document.querySelector("#brewery-list").addEventListener('change', (e) => {
+  //     const beers = state.BeerData;
+  //     const targetBrewery = e.target.value;
 
-      const breweryResult = beers.filter(beer => beer.brewery === targetBrewery);
-      //console.log(breweryResult)
+  //     const breweryResult = beers.filter(beer => beer.brewery === targetBrewery);
+  //     //console.log(breweryResult)
 
-      state.Home.beersToDisplay = breweryResult
-      render(state.Home)
-    })
+  //     state.Home.beersToDisplay = breweryResult
+  //     render(state.Home)
+  //   })
 
-    document.querySelector("#beer-list").addEventListener('change', (e) => {
-        //console.log(e.target.value)
+  //   document.querySelector("#beer-list").addEventListener('change', (e) => {
+  //       //console.log(e.target.value)
 
-    })
-  }
+  //   })
+  //}
 
 }
 
@@ -49,7 +49,37 @@ router
     })
   .on("/", () => {
     render();
-  })
+    //document.querySelector("#brewery-list").addEventListener('change', (e) => {
+      // const beers = state.BeerData;
+      // const targetBrewery = e.target.value;
+
+      // const breweryResult = beers.filter(beer => beer.brewery === targetBrewery);
+      // //console.log(breweryResult)
+
+      // state.Home.beersToDisplay = breweryResult
+      // render(state.Home)
+
+      document.querySelector("#brewery-list").addEventListener('change', (event) => {
+        console.log(event.target.value);
+        const breweryList = state.BeerData;
+        //const demoBeers = state.BeerData.filter(d => e.target.value in d);
+        const target = breweryList.filter(brewery => event.target.value in brewery);
+        //console.log(demoBeers);
+        //console.log(target)
+      })
+
+
+
+    document.querySelector("#beer-list").addEventListener('change', (event) => {
+        //console.log(event.target.value);
+        const beerList = state.BeerData;
+        const beerTarget = beerList.filter(beer => event.target.value in beer);
+        console.log(beerTarget)
+
+    })
+
+  }
+)
   .resolve();
 
 //Search button

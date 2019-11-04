@@ -12,6 +12,7 @@ function generateBrewList(breweries) {
 
 export default st => `
 <img id="image" src="${imgBeerHeader}"></img>
+<h1>Seasonal Beer Search</h1>
 <div class="selection">
 <label for="select-brewery">Brewery:</label>
   <select id="brewery-list">
