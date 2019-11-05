@@ -9,9 +9,9 @@ function generateBrewList(breweries) {
   return breweries.map(brewery => `<option>${brewery}</option>`).join(" ");
 }
 
-function generateResult(results) {
-  return `<p>${results}<p>`
-}
+// function generateResult(results) {
+//   return `<p>${results}<p>`
+// }
 
 
 
