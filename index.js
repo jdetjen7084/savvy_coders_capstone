@@ -63,13 +63,13 @@ router
       console.log(event.target.value);
       const breweryList = state.BeerData;
       const target = breweryList.filter(brewery => event.target.value in brewery);
-      //console.log(target)
+      console.log(target)
       })
 
 
 
     document.querySelector("#beer-list").addEventListener('change', (event) => {
-      const beerList = state.BeerData;
+      const beerList = state.BeerData.results;
       const beerTarget = beerList.filter(beer => event.target.value in beer);
       console.log(beerTarget)
     })
@@ -93,7 +93,7 @@ const query = db.ref("beer").orderByKey();
   query.once("value").then(snapShot => {
     snapShot.forEach(childSnapshot => {
       const childData = childSnapshot.val();
-      state.BeerData.push(childData);
+      state.BeerData.results.push(childData);
     });
   })
 

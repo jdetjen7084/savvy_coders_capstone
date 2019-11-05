@@ -18,5 +18,5 @@ export default {
     'Civil Life',
     'Square One'
   ],
-  beersToDisplay: []
+  //beersToDisplay: []
 }
