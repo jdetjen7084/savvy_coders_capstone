@@ -9,9 +9,15 @@ function generateBrewList(breweries) {
   return breweries.map(brewery => `<option>${brewery}</option>`).join(" ");
 }
 
+// function generateResult(results) {
+//   return `<p>${results}<p>`
+// }
+
+
 
 export default st => `
 <img id="image" src="${imgBeerHeader}"></img>
+<h1>Seasonal Beer Search</h1>
 <div class="selection">
 <label for="select-brewery">Brewery:</label>
   <select id="brewery-list">
@@ -29,7 +35,9 @@ export default st => `
 <div class="search">
   <input id="search" type="button" value="Search">
 </div>
+
 `
 ;
-
-
+  // {<div>
+  //   ${generateResult(st.results)}
+  //   </div>}
