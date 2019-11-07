@@ -206,7 +206,7 @@ input[type="button"] {
   color: var(--secondary);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (min-width: 770px) {
   h1 {
     font-size: 4em;
   }
