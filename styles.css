@@ -177,6 +177,11 @@ input[type="button"] {
   align-items: center;
 }
 
+.ContactLabel {
+  color: var(--secondary);
+  filter: drop-shadow(6px 5px 4px var(--primary-variant));
+}
+
 #enter {
   padding: 10px;
   text-decoration: none;
@@ -194,6 +199,11 @@ input[type="button"] {
 .grid div {
   padding: 5px;
   background-color: #f7b538;
+}
+
+.ListLink {
+  text-decoration: none;
+  color: var(--secondary);
 }
 
 @media screen and (min-width: 768px) {

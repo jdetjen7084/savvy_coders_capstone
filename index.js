@@ -37,9 +37,16 @@ router
       const beerList = state.BeerData.results;
       const beerTarget = beerList.filter(beer => event.target.value in beer);
       console.log(beerTarget);
+      // state.Home.beersToDisplay = beerTarget;
+      // console.log(state.Home.beersToDisplay)
     });
   })
   .resolve();
+
+  console.log(state.BeerData.results);
+
+//Search button will go here when available
+
 
 //database query
 const query = db.ref("beer").orderByKey();
