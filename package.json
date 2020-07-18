@@ -40,7 +40,7 @@
     "@firebase/database": "^0.5.10",
     "@firebase/firestore": "^1.6.2",
     "axios": "^0.19.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "navigo": "^7.1.2"
   }
 }
